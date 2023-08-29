@@ -1,0 +1,41 @@
+<h2>Projects</h2>
+
+<button mat-mini-fab color="primary" class="example-fab" (click)="onAddClick()">
+  <mat-icon>add</mat-icon>
+</button>
+
+<div class="card-container" *ngIf="projects">
+  <div *ngFor="let project of projects">
+
+
+    <mat-card *ngIf="project != editingProject" class="project-card">
+      <mat-card-header>
+        <img mat-card-avatar [src]="project.imageUrl">
+        <mat-card-title>{{project.name}}</mat-card-title>
+        <mat-card-subtitle>Budget: {{project.budget | currency: 'USD': "symbol": '.0'}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="project.imageUrl">
+      <mat-card-content>
+        <p>
+          {{project.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="onEditClick(project)" mat-button color="primary">
+          <mat-icon color="primary">mode_edit</mat-icon>
+          EDIT
+        </button>
+        <button (click)="onDeleteClick(project)" mat-button>
+          <mat-icon>delete</mat-icon>
+          DELETE
+        </button>
+      </mat-card-actions>
+
+    </mat-card>
+    <app-project-form [project]="project" (save)="onSave($event)" (cancel)="onCancel($event)" *ngIf="project == editingProject">
+    </app-project-form>
+  </div>
+
+  <app-project-form [project]="addingProject" (save)="onSave($event)" (cancel)="onCancel($event)" *ngIf="addingProject">
+  </app-project-form>
+</div>

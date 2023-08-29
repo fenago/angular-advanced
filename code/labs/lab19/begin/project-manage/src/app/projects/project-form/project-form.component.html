@@ -1,0 +1,33 @@
+<form [formGroup]="projectForm" class="input-group vertical" (submit)="onSubmit()">
+
+  <label for="name" [class.invalid]="projectForm.get('name').invalid">Project Name</label>
+  <input type="text" name="name" placeholder="enter name" formControlName="name">
+
+  <div *ngIf="projectForm.get('name').hasError('required')" class="card error">
+    <p>Name is required.</p>
+  </div>
+
+  <div *ngIf="projectForm.get('name').hasError('minlength')" class="card error">
+    <p>Name must be at least 3 characters long.</p>
+  </div>
+
+  <label for="description">Project Description</label>
+  <textarea type="text" name="description" placeholder="enter description" formControlName="description"></textarea>
+
+  <label for="budget">Project Budget</label>
+  <input type="number" name="budget" placeholder="enter budget" formControlName="budget">
+
+  <label for="isActive">Active?</label>
+  <input type="checkbox" name="isActive" formControlName="isActive">
+
+  <div class="input-group">
+    <button class="primary bordered medium">Save</button>
+    <span></span>
+    <a href="" (click)="onCancelClick($event)">cancel</a>
+  </div>
+
+  <!--<pre style="width: 300px">-->
+    <!--{{projectForm.value | json}}-->
+  <!--</pre>-->
+
+</form>

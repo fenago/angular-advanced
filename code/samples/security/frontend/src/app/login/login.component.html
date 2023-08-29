@@ -1,0 +1,30 @@
+<div class="ui middle aligned  aligned grid">
+
+  <div class="six wide column">
+    <h1>Login</h1>
+    <div *ngIf="message" class="ui negative message">
+      <div class="header">
+        Login failed.
+      </div>
+      <p>{{message}}</p>
+    </div>
+    <form [formGroup]="loginForm" (submit)="onSubmit()" class="ui large form">
+
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="user icon"></i>
+          <input formControlName="email" type="text" placeholder="email">
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="lock icon"></i>
+          <input formControlName="password" type="password" placeholder="password">
+        </div>
+      </div>
+
+      <button class="ui fluid large teal submit button">Login</button>
+
+    </form>
+  </div>
+</div>

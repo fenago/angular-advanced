@@ -1,0 +1,31 @@
+<div class="ui main container">
+  <div class="ui vertical masthead segment">
+    <div class="ui secondary pointing menu">
+      <a [routerLink]="['/home']" routerLinkActive="active" class="item">
+        Home
+      </a>
+      <a [routerLink]="['/profile']" routerLinkActive="active" class="item">
+        Profile
+      </a>
+
+      <div class="right menu">
+        <a *ngIf="!isLoggedIn; else loggedOut" [routerLink]="['/login']" routerLinkActive="active" class="ui item">
+          Login
+        </a>
+        <ng-template #loggedOut>
+          <span class="ui item">Welcome {{authenticatedUser.email}}</span>
+
+          <a (click)="logout($event)" class="ui item">
+            Logout
+          </a>
+        </ng-template>
+
+      </div>
+    </div>
+
+    <div class="ui segment">
+      <p></p>
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>

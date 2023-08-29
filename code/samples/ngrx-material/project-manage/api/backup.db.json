@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      
+      "imageUrl": "https://placeimg.com/500/300/arch/1",
+      "id": 1,
+      "name": "Matdexon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat.",
+      "contractTypeId": 2,
+      "isActive": false,
+      "contractSignedOn": "2015-12-10T05:00:00.000Z",
+      "budget": 30000,
+      "editing": false
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/2",
+      "id": 2,
+      "name": "Elastic Doors",
+      "description": "Quisque ornare sodales feugiat. Mauris iaculis nunc vitae elit commodo lobortis. Sed dapibus, odio sit amet sodales malesuada.",
+      "contractTypeId": 2,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 25233,
+      "editing": false
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/3",
+      "id": 3,
+      "name": "Remote Wrenchs",
+      "description": "Sed a fermentum diam. Vestibulum vel dignissim nisi, ultrices finibus odio. Sed nec tempus elit. Quisque auctor sem odio.",
+      "contractTypeId": 2,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 25233
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/4",
+      "id": 4,
+      "name": "Dusty Epsilon",
+      "description": "Nunc cursus purus malesuada, dignissim augue ac, ullamcorper turpis. Nullam efficitur odio id nulla eleifend, vel tempus.",
+      "contractTypeId": 1,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 25233
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/15",
+      "id": 5,
+      "name": "Kaylux",
+      "description": "Pellentesque eu mauris vel sem laoreet blandit ac ac erat. Morbi lorem justo, commodo at faucibus vitae, consequat.",
+      "contractTypeId": 1,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 25233
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/16",
+      "id": 6,
+      "name": "Scarlet Weeknight",
+      "description": "Fusce quis quam eget sapien sodales iaculis. Curabitur aliquet at erat sed cursus. In hendrerit. Curabitur aliquet at erat sed cursus.",
+      "contractTypeId": 1,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 25233
+    },
+    {
+      "imageUrl": "https://placeimg.com/500/300/arch/17",
+      "id": 7,
+      "name": "Another One",
+      "description": "Fusce quis quam eget sapien sodales iaculis. Curabitur aliquet at erat sed cursus. In hendrerit. Curabitur aliquet at erat sed cursus.",
+      "contractTypeId": 1,
+      "isActive": true,
+      "contractSignedOn": "2016-03-05T05:00:00.000Z",
+      "budget": 29533
+    }
+  ],
+  "contractTypes": [
+    {
+      "id": 1,
+      "name": "Fixed Bid",
+      "editing": false
+    },
+    {
+      "id": 2,
+      "name": "Time and Materials",
+      "editing": false
+    },
+    {
+      "id": 3,
+      "name": "Cost + Fixed Markup",
+      "editing": false
+    },
+    {
+      "id": 4,
+      "name": "Fixed Profit",
+      "editing": false
+    },
+    {
+      "id": 5,
+      "name": "Phased Development",
+      "editing": false
+    },
+    {
+      "id": 6,
+      "name": "Sprint Contract",
+      "editing": false
+    },
+    {
+      "id": 7,
+      "name": "Joint Ventures",
+      "editing": false
+    }
+  ]
+}

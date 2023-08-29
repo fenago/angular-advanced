@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css";
+
+img.avatar {
+  border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Craig Flayer",
+      "email": "craig@test.com",
+      "imageUrl": "https://randomuser.me/api/portraits/men/41.jpg",
+      "roles": ["admin"]
+    },
+    {
+      "id": 2,
+      "name": "David Jenkins",
+      "email": "david@email.com",
+      "imageUrl": "https://randomuser.me/api/portraits/men/30.jpg",
+      "roles": ["editor", "approver"]
+    },
+    {
+      "id": 3,
+      "name": "Jodie What",
+      "email": "jodie@email.com",
+      "imageUrl": "https://randomuser.me/api/portraits/women/0.jpg",
+      "roles": ["reader"]
+    }
+  ]
+}

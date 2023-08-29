@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+input.ng-invalid {
+  border-color: var(--input-invalid-color);
+  box-shadow: none;
+}
+
+label.invalid{
+  color: var(--input-invalid-color);
+}

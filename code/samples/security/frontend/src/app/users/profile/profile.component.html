@@ -1,0 +1,17 @@
+<h1>Profile</h1>
+
+<div *ngIf="user; else none;">
+  <img class="avatar" [src]="user.imageUrl" [alt]="user.name">
+  <h3>{{user.name}}</h3>
+  <div>
+    Email: {{user.email}}
+  </div>
+</div>
+<ng-template #none>
+  No user profile is available.
+</ng-template>
+
+
+<!-- <pre>
+  {{ user | json}}
+</pre> -->

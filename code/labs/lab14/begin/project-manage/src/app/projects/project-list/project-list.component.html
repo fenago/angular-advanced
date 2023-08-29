@@ -1,0 +1,6 @@
+<div class="row">
+  <div class="cols-sm" *ngFor="let project of projects">
+    <app-project-card *ngIf="project !== editingProject" [project]="project" (edit)="onEdit($event)" ></app-project-card>
+    <app-project-form *ngIf="project == editingProject"></app-project-form>
+  </div>
+</div>

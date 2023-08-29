@@ -1,0 +1,16 @@
+body { 
+    background-image:url(../assets/128-174.jpg);
+    background-repeat:repeat; 
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/Lobster/Lobster-Regular.ttf') format('woff2');
+}
+
+h2{
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}

@@ -1,0 +1,9 @@
+<div *ngIf=" processing$ | async ">
+  <!-- <mat-progress-bar #progress mode="indeterminate"></mat-progress-bar> -->
+</div>
+<app-project-list (edit)="onEdit($event)" [editingProject]="editingProject$ | async" (adding)="onAdding($event)" [addingProject]="addingProject$ | async"
+  (save)="onSave($event)" (cancel)="onCancel($event)" (delete)="onDelete($event)" [projects]="projects$ | async">
+</app-project-list>
+<mat-card *ngIf="errorMessage$ | async">
+  {{errorMessage$ | async}}
+</mat-card>

@@ -1,0 +1,28 @@
+image: gitpod/workspace-full:2022-08-31-00-33-35
+
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
+    onOpen: "notify"
+    visibility: "public"
+  - port: 8081
+    onOpen: "notify"
+    visibility: "public"
+  - port: 4200
+    onOpen: "open-browser"
+    visibility: "public"
+    
+# List of VS Code extensions to be installed
+vscode:
+  extensions:
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-test
+    - vscjava.vscode-spring-initializr
+    - vscjava.vscode-spring-boot-dashboard
+    - anwar.papyrus-pdf
+
+# Commands to run on start
+tasks:
+  - init: echo 'Initialization commands can go here'
+    command: echo 'Startup commands like running your Spring Boot app can go here'
