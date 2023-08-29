@@ -1,0 +1,12 @@
+html,
+body,
+.container {
+  height: 100%;
+}
+
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

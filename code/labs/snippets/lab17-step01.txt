@@ -1,0 +1,12 @@
+onSubmit() {
+    if (this.projectForm.invalid) {
+      return;
+    }
+
+    const updatedProject = Object.assign(
+                            {},
+                            this.project,
+                            this.projectForm.value);
+
+    this.save.emit({project: updatedProject });
+  }

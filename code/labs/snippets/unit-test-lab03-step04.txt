@@ -1,0 +1,16 @@
+(component.project = new Project(
+      1,
+      'Mission Impossible',
+      'This is really difficult.',
+      'assets/placeimg_500_300_arch7.jpg',
+      5,
+      new Date(2015, 1, 2),
+      30100,
+      true,
+      false
+    )),
+
+ it('header should be project name', () => {
+    const h5 = fixture.nativeElement.querySelector('h5');
+    expect(h5.textContent).toEqual(component.project.name);
+  });

@@ -1,0 +1,15 @@
+const httpOptions = {
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
+};
+
+==================================================================
+
+put(project: Project): Observable<Project> {
+    const url = this.projectsUrl + project.id;
+    return this.http.put<Project>(url, project, httpOptions).pipe(
+      catchError((error: HttpErrorResponse) => {
+        console.log(error);
+        return throwError('An error occurred updating the projects.');
+      })
+    );
+  }

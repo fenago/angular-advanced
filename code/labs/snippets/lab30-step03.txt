@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="input-group fluid">
+      <input #searchBox type="text" name="searchBox" placeholder="Search" (keyup)="onSearch(searchBox.value)">
+    </div>
+  </div>
+</div>

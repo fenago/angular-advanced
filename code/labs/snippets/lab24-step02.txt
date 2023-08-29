@@ -1,0 +1,10 @@
+const project: Project = event.item;
+this.projectService.put(project).subscribe(
+    updatedProject => {
+    const index = this.projects.findIndex(
+        element => element.id === project.id
+    );
+    this.projects[index] = project;
+    },
+    error => (this.errorMessage = error)
+);

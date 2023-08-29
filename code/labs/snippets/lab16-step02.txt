@@ -1,0 +1,6 @@
+this.projectForm = new FormGroup({
+    name: new FormControl(this.project.name),
+    description: new FormControl(this.project.description),
+    budget: new FormControl(this.project.budget),
+    isActive: new FormControl(this.project.isActive)
+});

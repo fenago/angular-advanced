@@ -1,0 +1,17 @@
+import { Component, Input } from '@angular/core';
+import { Project } from '../shared/project.model';
+import { Observable, of } from 'rxjs';
+import { PROJECTS } from '../shared/mock-projects';
+import { ProjectService } from '../shared/project.service';
+
+@Component({ selector: 'app-project-list', template: '' })
+class ProjectListStubComponent {
+  @Input()
+  projects: Project[] = [];
+}
+
+export class ProjectServiceStub {
+  listByName(): Observable<Project[]> {
+    return of(PROJECTS);
+  }
+}

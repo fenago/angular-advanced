@@ -1,0 +1,12 @@
+  it('should return user friendly error when listing projects', () => {
+    const notFoundErrorResponse = { status: 404, statusText: 'Not Found' };
+    const content = 'The requested URL was not found on the server.';
+    service.list().subscribe(
+      data => {},
+      error => {
+        expect(error).toEqual('An error occurred loading the projects.');
+      }
+    );
+    const request = httpTestingController.expectOne(projectsUrl);
+    request.flush(content, notFoundErrorResponse);
+  });

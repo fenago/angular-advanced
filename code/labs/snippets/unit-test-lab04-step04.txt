@@ -1,0 +1,5 @@
+  it('should have projects', async(() => {
+    fixture.whenStable().then(() => {
+      expect(component.projects.length).toEqual(7);
+    });
+  }));

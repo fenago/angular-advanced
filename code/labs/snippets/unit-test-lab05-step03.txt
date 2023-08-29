@@ -1,0 +1,30 @@
+import { TestBed } from '@angular/core/testing';
+import { ProjectService } from './project.service';
+import {
+  HttpClientTestingModule,
+  HttpTestingController
+} from '@angular/common/http/testing';
+import { HttpClient } from '@angular/common/http';
+import { PROJECTS } from './mock-projects';
+import { environment } from 'src/environments/environment';
+
+describe('ProjectService', () => {
+  let httpClient: HttpClient;
+  let httpTestingController: HttpTestingController;
+  let service: ProjectService;
+  let projectsUrl: string;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({ imports: [HttpClientTestingModule] });
+
+    httpClient = TestBed.get(HttpClient);
+    httpTestingController = TestBed.get(HttpTestingController);
+    service = TestBed.get(ProjectService);
+    projectsUrl = environment.backendUrl + '/projects/';
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+
+});

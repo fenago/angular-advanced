@@ -1,0 +1,10 @@
+  it('should list projects', () => {
+    service.list().subscribe(data => expect(data).toEqual(PROJECTS));
+    const request = httpTestingController.expectOne(projectsUrl);
+    request.flush(PROJECTS);
+  });
+
+  afterEach(() => {
+    // After every test, assert that there are no more pending requests.
+    httpTestingController.verify();
+  });

@@ -1,0 +1,22 @@
+
+  ngOnInit() {
+    this.search('');
+  }
+
+  onSearch(term: string) {
+    this.search(term);
+  }
+
+  search(term: string) {
+    this.loading = true;
+    this.projectService.listByName(term).subscribe(
+      data => {
+        this.projects = data;
+      },
+      error => {
+        this.loading = false;
+        this.errorMessage = error;
+      },
+      () => (this.loading = false)
+    );
+  }

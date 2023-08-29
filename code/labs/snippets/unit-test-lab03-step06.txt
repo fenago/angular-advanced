@@ -1,0 +1,13 @@
+ it('should raise event when edit clicked', () => {
+    let projectBeingEdited: Project;
+
+    component.edit.subscribe(
+      (event: any) => (projectBeingEdited = event.editingProject)
+    );
+
+    const editButtonDebugElement = fixture.debugElement.query(By.css('button'));
+    editButtonDebugElement.triggerEventHandler('click', {
+      preventDefault: () => {}
+    });
+    expect(projectBeingEdited).toEqual(component.project);
+  });

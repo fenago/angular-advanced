@@ -1,0 +1,7 @@
+<div class="row">
+    <h5 [ngSwitch]="projects.length" class="col-sm-offset-5">
+        <mark *ngSwitchCase="0" class="tag">No results</mark>
+        <mark *ngSwitchCase="1" class="tag">{{projects.length}} result</mark>
+        <mark *ngSwitchDefault class="tag">{{projects.length}} results</mark>
+    </h5>
+</div>
