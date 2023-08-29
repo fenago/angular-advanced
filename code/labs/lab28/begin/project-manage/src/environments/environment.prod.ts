@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendUrl: 'http://localhost:3000'
+  backendUrl: 'https://3000-ADD_GITPOD_URL_HERE'
 };

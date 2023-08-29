@@ -1,4 +1,4 @@
-PUT http://localhost:3000/projects/3 HTTP/1.1
+PUT https://3000-ADD_GITPOD_URL_HERE/projects/3 HTTP/1.1
 content-type: application/json
 
 {

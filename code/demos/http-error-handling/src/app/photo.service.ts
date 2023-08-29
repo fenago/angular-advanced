@@ -11,7 +11,7 @@ export class PhotoService {
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Photo[]> {
-    return this.http.get<Photo[]>('http://localhost:3000/photos/wrong').pipe(
+    return this.http.get<Photo[]>('https://3000-ADD_GITPOD_URL_HERE/photos/wrong').pipe(
       catchError((error: HttpErrorResponse) => {
         console.log(error);
         return throwError('An error occured loading the photos.');

@@ -1,1 +1,1 @@
-export const ENDPOINT_URI = 'http://localhost:3000/';
+export const ENDPOINT_URI = 'https://3000-ADD_GITPOD_URL_HERE/';

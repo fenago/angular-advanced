@@ -1,1 +1,1 @@
-DELETE http://localhost:3000/projects/8 HTTP/1.1
+DELETE https://3000-ADD_GITPOD_URL_HERE/projects/8 HTTP/1.1

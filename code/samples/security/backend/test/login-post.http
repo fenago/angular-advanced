@@ -1,4 +1,4 @@
-POST http://localhost:3000/auth/login
+POST https://3000-ADD_GITPOD_URL_HERE/auth/login
 Content-Type: application/json
 
 {

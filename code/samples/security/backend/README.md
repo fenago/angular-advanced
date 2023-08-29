@@ -17,7 +17,7 @@ npm run api:auth
 ## Login API
 
 ```
-POST http://localhost:3000/auth/login
+POST https://3000-ADD_GITPOD_URL_HERE/auth/login
 ```
 
 ### Request Content-Type
@@ -49,11 +49,11 @@ Content-Type: application/json
 ## Auth Required API
 
 ```
-GET     http://localhost:3000/users
-GET     http://localhost:3000/users/1
-POST    http://localhost:3000/users
-PUT     http://localhost:3000/users/1
-DELETE  http://localhost:3000/users/1
+GET     https://3000-ADD_GITPOD_URL_HERE/users
+GET     https://3000-ADD_GITPOD_URL_HERE/users/1
+POST    https://3000-ADD_GITPOD_URL_HERE/users
+PUT     https://3000-ADD_GITPOD_URL_HERE/users/1
+DELETE  https://3000-ADD_GITPOD_URL_HERE/users/1
 ```
 
 ## Auth Request Header (required access_token)
